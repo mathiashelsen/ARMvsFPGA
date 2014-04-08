@@ -1,0 +1,119 @@
+|ARMvsFPGA
+SW[0] => shiftReg[0].DATAIN
+SW[1] => shiftReg[1].DATAIN
+SW[2] => shiftReg[2].DATAIN
+SW[3] => shiftReg[3].DATAIN
+LEDG[0] <= <GND>
+LEDG[1] <= <GND>
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+LEDG[8] <= <GND>
+LEDG[9] <= <GND>
+HEX0_D[0] <= segdriver:ss1.OUT
+HEX0_D[1] <= segdriver:ss1.OUT
+HEX0_D[2] <= segdriver:ss1.OUT
+HEX0_D[3] <= segdriver:ss1.OUT
+HEX0_D[4] <= segdriver:ss1.OUT
+HEX0_D[5] <= segdriver:ss1.OUT
+HEX0_D[6] <= segdriver:ss1.OUT
+HEX1_D[0] <= segdriver:ss2.OUT
+HEX1_D[1] <= segdriver:ss2.OUT
+HEX1_D[2] <= segdriver:ss2.OUT
+HEX1_D[3] <= segdriver:ss2.OUT
+HEX1_D[4] <= segdriver:ss2.OUT
+HEX1_D[5] <= segdriver:ss2.OUT
+HEX1_D[6] <= segdriver:ss2.OUT
+HEX2_D[0] <= segdriver:ss3.OUT
+HEX2_D[1] <= segdriver:ss3.OUT
+HEX2_D[2] <= segdriver:ss3.OUT
+HEX2_D[3] <= segdriver:ss3.OUT
+HEX2_D[4] <= segdriver:ss3.OUT
+HEX2_D[5] <= segdriver:ss3.OUT
+HEX2_D[6] <= segdriver:ss3.OUT
+HEX3_D[0] <= segdriver:ss4.OUT
+HEX3_D[1] <= segdriver:ss4.OUT
+HEX3_D[2] <= segdriver:ss4.OUT
+HEX3_D[3] <= segdriver:ss4.OUT
+HEX3_D[4] <= segdriver:ss4.OUT
+HEX3_D[5] <= segdriver:ss4.OUT
+HEX3_D[6] <= segdriver:ss4.OUT
+BUTTON[0] => shiftReg[0].CLK
+BUTTON[0] => shiftReg[1].CLK
+BUTTON[0] => shiftReg[2].CLK
+BUTTON[0] => shiftReg[3].CLK
+BUTTON[0] => shiftReg[4].CLK
+BUTTON[0] => shiftReg[5].CLK
+BUTTON[0] => shiftReg[6].CLK
+BUTTON[0] => shiftReg[7].CLK
+BUTTON[0] => shiftReg[8].CLK
+BUTTON[0] => shiftReg[9].CLK
+BUTTON[0] => shiftReg[10].CLK
+BUTTON[0] => shiftReg[11].CLK
+BUTTON[0] => shiftReg[12].CLK
+BUTTON[0] => shiftReg[13].CLK
+BUTTON[0] => shiftReg[14].CLK
+BUTTON[0] => shiftReg[15].CLK
+BUTTON[1] => ~NO_FANOUT~
+BUTTON[2] => ~NO_FANOUT~
+
+
+|ARMvsFPGA|segdriver:ss1
+IN[0] => Decoder0.IN3
+IN[1] => Decoder0.IN2
+IN[2] => Decoder0.IN1
+IN[3] => Decoder0.IN0
+OUT[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ARMvsFPGA|segdriver:ss2
+IN[0] => Decoder0.IN3
+IN[1] => Decoder0.IN2
+IN[2] => Decoder0.IN1
+IN[3] => Decoder0.IN0
+OUT[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ARMvsFPGA|segdriver:ss3
+IN[0] => Decoder0.IN3
+IN[1] => Decoder0.IN2
+IN[2] => Decoder0.IN1
+IN[3] => Decoder0.IN0
+OUT[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ARMvsFPGA|segdriver:ss4
+IN[0] => Decoder0.IN3
+IN[1] => Decoder0.IN2
+IN[2] => Decoder0.IN1
+IN[3] => Decoder0.IN0
+OUT[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

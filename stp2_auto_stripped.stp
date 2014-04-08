@@ -1,0 +1,612 @@
+<session jtag_chain="USB-Blaster [1-1.2]" jtag_device="@1: EP3C16/EP4CE15 (0x020F20DD)" sof_file="ARMvsFPGA.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2014/04/08 08:49:50  #0">
+      <clock name="auto_stp_external_clock_0" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="BUTTON[0]" tap_mode="probeonly"/>
+          <wire name="BUTTON[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[1]~input" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[2]~input" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[3]~input" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]~feeder" tap_mode="probeonly"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="BUTTON[0]" tap_mode="probeonly"/>
+          <wire name="BUTTON[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[1]~input" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[2]~input" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[3]~input" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]~feeder" tap_mode="probeonly"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="BUTTON[0]" tap_mode="probeonly"/>
+          <wire name="BUTTON[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[0]" tap_mode="probeonly"/>
+          <wire name="SW[0]~input" tap_mode="probeonly"/>
+          <wire name="SW[1]" tap_mode="probeonly"/>
+          <wire name="SW[1]~input" tap_mode="probeonly"/>
+          <wire name="SW[2]" tap_mode="probeonly"/>
+          <wire name="SW[2]~input" tap_mode="probeonly"/>
+          <wire name="SW[3]" tap_mode="probeonly"/>
+          <wire name="SW[3]~input" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]" tap_mode="probeonly"/>
+          <wire name="shiftReg[0]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]" tap_mode="probeonly"/>
+          <wire name="shiftReg[10]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]" tap_mode="probeonly"/>
+          <wire name="shiftReg[11]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]" tap_mode="probeonly"/>
+          <wire name="shiftReg[12]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]" tap_mode="probeonly"/>
+          <wire name="shiftReg[13]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]" tap_mode="probeonly"/>
+          <wire name="shiftReg[14]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]" tap_mode="probeonly"/>
+          <wire name="shiftReg[15]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]" tap_mode="probeonly"/>
+          <wire name="shiftReg[1]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]" tap_mode="probeonly"/>
+          <wire name="shiftReg[2]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]" tap_mode="probeonly"/>
+          <wire name="shiftReg[3]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]" tap_mode="probeonly"/>
+          <wire name="shiftReg[4]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]" tap_mode="probeonly"/>
+          <wire name="shiftReg[5]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]" tap_mode="probeonly"/>
+          <wire name="shiftReg[6]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]" tap_mode="probeonly"/>
+          <wire name="shiftReg[7]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]" tap_mode="probeonly"/>
+          <wire name="shiftReg[8]~feeder" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]" tap_mode="probeonly"/>
+          <wire name="shiftReg[9]~feeder" tap_mode="probeonly"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]" tap_mode="probeonly" type="input pin"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]" tap_mode="probeonly" type="input pin"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]" tap_mode="probeonly" type="input pin"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]" tap_mode="probeonly" type="input pin"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]" tap_mode="probeonly" type="input pin"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]~feeder" tap_mode="probeonly" type="combinatorial"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]" tap_mode="probeonly" type="register"/>
+          <node is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]~feeder" tap_mode="probeonly" type="combinatorial"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]" storage_index="0" tap_mode="probeonly" trigger_index="0" type="input pin"/>
+          <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]~input" storage_index="1" tap_mode="probeonly" trigger_index="1" type="combinatorial"/>
+          <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]" storage_index="2" tap_mode="probeonly" trigger_index="2" type="input pin"/>
+          <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]~input" storage_index="3" tap_mode="probeonly" trigger_index="3" type="combinatorial"/>
+          <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]" storage_index="4" tap_mode="probeonly" trigger_index="4" type="input pin"/>
+          <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]~input" storage_index="5" tap_mode="probeonly" trigger_index="5" type="combinatorial"/>
+          <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]" storage_index="6" tap_mode="probeonly" trigger_index="6" type="input pin"/>
+          <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]~input" storage_index="7" tap_mode="probeonly" trigger_index="7" type="combinatorial"/>
+          <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]" storage_index="8" tap_mode="probeonly" trigger_index="8" type="input pin"/>
+          <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]~input" storage_index="9" tap_mode="probeonly" trigger_index="9" type="combinatorial"/>
+          <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]" storage_index="10" tap_mode="probeonly" trigger_index="10" type="register"/>
+          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]~feeder" storage_index="11" tap_mode="probeonly" trigger_index="11" type="combinatorial"/>
+          <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]" storage_index="24" tap_mode="probeonly" trigger_index="24" type="register"/>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]~feeder" storage_index="25" tap_mode="probeonly" trigger_index="25" type="combinatorial"/>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]" storage_index="26" tap_mode="probeonly" trigger_index="26" type="register"/>
+          <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]~feeder" storage_index="27" tap_mode="probeonly" trigger_index="27" type="combinatorial"/>
+          <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]" storage_index="28" tap_mode="probeonly" trigger_index="28" type="register"/>
+          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]~feeder" storage_index="29" tap_mode="probeonly" trigger_index="29" type="combinatorial"/>
+          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]" storage_index="30" tap_mode="probeonly" trigger_index="30" type="register"/>
+          <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]~feeder" storage_index="31" tap_mode="probeonly" trigger_index="31" type="combinatorial"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]" storage_index="32" tap_mode="probeonly" trigger_index="32" type="register"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]~feeder" storage_index="33" tap_mode="probeonly" trigger_index="33" type="combinatorial"/>
+          <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]" storage_index="34" tap_mode="probeonly" trigger_index="34" type="register"/>
+          <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]~feeder" storage_index="35" tap_mode="probeonly" trigger_index="35" type="combinatorial"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]" storage_index="36" tap_mode="probeonly" trigger_index="36" type="register"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]~feeder" storage_index="37" tap_mode="probeonly" trigger_index="37" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]" storage_index="38" tap_mode="probeonly" trigger_index="38" type="register"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]~feeder" storage_index="39" tap_mode="probeonly" trigger_index="39" type="combinatorial"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]" storage_index="40" tap_mode="probeonly" trigger_index="40" type="register"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]~feeder" storage_index="41" tap_mode="probeonly" trigger_index="41" type="combinatorial"/>
+          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]" storage_index="12" tap_mode="probeonly" trigger_index="12" type="register"/>
+          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]~feeder" storage_index="13" tap_mode="probeonly" trigger_index="13" type="combinatorial"/>
+          <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]" storage_index="14" tap_mode="probeonly" trigger_index="14" type="register"/>
+          <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]~feeder" storage_index="15" tap_mode="probeonly" trigger_index="15" type="combinatorial"/>
+          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]" storage_index="16" tap_mode="probeonly" trigger_index="16" type="register"/>
+          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]~feeder" storage_index="17" tap_mode="probeonly" trigger_index="17" type="combinatorial"/>
+          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]" storage_index="18" tap_mode="probeonly" trigger_index="18" type="register"/>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]~feeder" storage_index="19" tap_mode="probeonly" trigger_index="19" type="combinatorial"/>
+          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]" storage_index="20" tap_mode="probeonly" trigger_index="20" type="register"/>
+          <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]~feeder" storage_index="21" tap_mode="probeonly" trigger_index="21" type="combinatorial"/>
+          <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]" storage_index="22" tap_mode="probeonly" trigger_index="22" type="register"/>
+          <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]~feeder" storage_index="23" tap_mode="probeonly" trigger_index="23" type="combinatorial"/>
+        </data_view>
+        <setup_view>
+          <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]" storage_index="0" tap_mode="probeonly" trigger_index="0" type="input pin"/>
+          <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="BUTTON[0]~input" storage_index="1" tap_mode="probeonly" trigger_index="1" type="combinatorial"/>
+          <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]" storage_index="2" tap_mode="probeonly" trigger_index="2" type="input pin"/>
+          <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[0]~input" storage_index="3" tap_mode="probeonly" trigger_index="3" type="combinatorial"/>
+          <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]" storage_index="4" tap_mode="probeonly" trigger_index="4" type="input pin"/>
+          <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[1]~input" storage_index="5" tap_mode="probeonly" trigger_index="5" type="combinatorial"/>
+          <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]" storage_index="6" tap_mode="probeonly" trigger_index="6" type="input pin"/>
+          <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[2]~input" storage_index="7" tap_mode="probeonly" trigger_index="7" type="combinatorial"/>
+          <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]" storage_index="8" tap_mode="probeonly" trigger_index="8" type="input pin"/>
+          <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="SW[3]~input" storage_index="9" tap_mode="probeonly" trigger_index="9" type="combinatorial"/>
+          <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]" storage_index="10" tap_mode="probeonly" trigger_index="10" type="register"/>
+          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[0]~feeder" storage_index="11" tap_mode="probeonly" trigger_index="11" type="combinatorial"/>
+          <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]" storage_index="24" tap_mode="probeonly" trigger_index="24" type="register"/>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[1]~feeder" storage_index="25" tap_mode="probeonly" trigger_index="25" type="combinatorial"/>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]" storage_index="26" tap_mode="probeonly" trigger_index="26" type="register"/>
+          <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[2]~feeder" storage_index="27" tap_mode="probeonly" trigger_index="27" type="combinatorial"/>
+          <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]" storage_index="28" tap_mode="probeonly" trigger_index="28" type="register"/>
+          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[3]~feeder" storage_index="29" tap_mode="probeonly" trigger_index="29" type="combinatorial"/>
+          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]" storage_index="30" tap_mode="probeonly" trigger_index="30" type="register"/>
+          <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[4]~feeder" storage_index="31" tap_mode="probeonly" trigger_index="31" type="combinatorial"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]" storage_index="32" tap_mode="probeonly" trigger_index="32" type="register"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[5]~feeder" storage_index="33" tap_mode="probeonly" trigger_index="33" type="combinatorial"/>
+          <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]" storage_index="34" tap_mode="probeonly" trigger_index="34" type="register"/>
+          <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[6]~feeder" storage_index="35" tap_mode="probeonly" trigger_index="35" type="combinatorial"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]" storage_index="36" tap_mode="probeonly" trigger_index="36" type="register"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[7]~feeder" storage_index="37" tap_mode="probeonly" trigger_index="37" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]" storage_index="38" tap_mode="probeonly" trigger_index="38" type="register"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[8]~feeder" storage_index="39" tap_mode="probeonly" trigger_index="39" type="combinatorial"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]" storage_index="40" tap_mode="probeonly" trigger_index="40" type="register"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[9]~feeder" storage_index="41" tap_mode="probeonly" trigger_index="41" type="combinatorial"/>
+          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]" storage_index="12" tap_mode="probeonly" trigger_index="12" type="register"/>
+          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[10]~feeder" storage_index="13" tap_mode="probeonly" trigger_index="13" type="combinatorial"/>
+          <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]" storage_index="14" tap_mode="probeonly" trigger_index="14" type="register"/>
+          <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[11]~feeder" storage_index="15" tap_mode="probeonly" trigger_index="15" type="combinatorial"/>
+          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]" storage_index="16" tap_mode="probeonly" trigger_index="16" type="register"/>
+          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[12]~feeder" storage_index="17" tap_mode="probeonly" trigger_index="17" type="combinatorial"/>
+          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]" storage_index="18" tap_mode="probeonly" trigger_index="18" type="register"/>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[13]~feeder" storage_index="19" tap_mode="probeonly" trigger_index="19" type="combinatorial"/>
+          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]" storage_index="20" tap_mode="probeonly" trigger_index="20" type="register"/>
+          <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[14]~feeder" storage_index="21" tap_mode="probeonly" trigger_index="21" type="combinatorial"/>
+          <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]" storage_index="22" tap_mode="probeonly" trigger_index="22" type="register"/>
+          <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="shiftReg[15]~feeder" storage_index="23" tap_mode="probeonly" trigger_index="23" type="combinatorial"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="FF198EAA" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2014/04/08 08:49:50  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>111111111111111111111111111111111111111111
+            <pwr_up_transitional>111111111111111111111111111111111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+  </instance>
+  <embedded_sof_files>
+    <embedded_sof_file id_crc_pairs="" name="ARMvsFPGA.sof" size="496850">eJztnd/PLMeZ16vnx+ux8WYb8+aVkbLZypFjjiKIx3biTSQnKjs/NrtixeFN
+AkGAPLbP8ebsvmsb21ktSIhayxeRkJBBQSBFSGfvuIMLLpC4mUUIsVzxB3Bh
+8Q8gJC4sQDJTM+/0/Ogf9aPrqaru+n7sU+/MdPXTT890P996umue+eFf+z5T
+PL75V7C/u2n/+s9ef++Dn73Pf+u3+Isv/JU3Hn7Av/POH7z78ObBe/xvPHjv
+/YfvvM2ff/Gry68+z1/92cOb+/yFF1/gy5eee/6F515YPv8i/+GD9/7w4ZsP
++L3X3/x9/jz/4W/zv/ngDf69+w8/2KzJJuxXNpv43r0Xv/P8S9//2je+9p2X
+2HS77R+//cHDD24e3GdPsbubp5/9yqePffrZlv/5WcVjn/7m1ln5qWrVK3+B
+lWwH3/ynduF/bLbwDPtKcfvy7XLV3n/w/sPfffu1n77+/k+/+sbDtzev/Onb
+/+I//LN/83fKP/uK6vPGL7/zQ8Y+t+3/3zf/Xrn+nT98//v3fvOVr/7e/Yfs
+5fdv7r/27nvv/N6DNz947eHbb73z7Sc4f/n2BfV480yZ5n9w/+uv3X/4uw/e
+/+C1byzf+NadN59/6cE3f+ONN775wutvff3N55dvbh7ceW679nNHq7/81uYt
+rgzfPuf3H6g381t3jt+xO/zd1z/46bfuHPx7/5237vCfvf/gvTffub/pvPyj
+79+y386R7Zefq+/In2f/8B8/dvt+/fxvv8yqNy8Gq8kzxU9Wk78aa/szVghW
+Ft/d/rl9tvvD1FG2YBN5/Ofo4R25UH9MODe9+SM3LxZcbf9sC5s/rjb1f25Z
+FK+ykqvX5OHP5kW57bHx4aOdK7d/2KI88bGcGHm4tXm78Ve3fw7bZx+xL4mN
+ocMfI5OVnzZ/zN7P7Nkeyvz2iZgwy/ft9uB62p9DdPCz55PD6257nSFmkW9s
+DGqv10oltswPB+qTjsZkX292PNFvdcv3X/TbWjLn99Jhne0HbabUY8N6RLsi
+cAIQETVfOcHP2SXUmIOfvfhz1VR7un8g6h1NeJyJ4sROIsjGV4vbf9vYWwXg
+GbOIxpVMzFq3kjDpfEp08nEyDkhnh31xctieIzxtpLKTyChF7P5MG/wRh2NJ
+VgeVm9vVO5rMUcPNu24Dk/0ViWR29YhJ7cEtJx/rVnhmTd20yP0Dl9Fvgzmv
+wUy2Lknxs6Iny71OJO6CIPwotgPBkSpw+4m+g+Lu7zud2QR3GoTDOovzJ1sj
+Sv3UXkn1ZHZk/bDgu01dTahscvWgON5s04K+Nmu7UnXZ09njZMGjhz9u6qql
+6HKscYGWktnt7PF7bMfc8HbbOfec1upmTmCzGcFWGQr2zFu6OSzc1JpgGJvh
+MRcWcd/pLab4XPSHT3cPC7V+6XtOal34V2uNOm38K2td5m5qrRZ83UGt2xzr
+odYbVu0267virtan5HJHT8R2IAqYrARAM+Tnhu0GbHLrxldMqGxy9YAgt551
+C9jdvfU9xmpdPvqFW27NSNQ6TG4tmbzrst7gWZWDmhvnCSFiexCMk+iYzkXh
+VWwHwDAYh1rTXQnnza+Y0O5Y44KeNk/985lbAzAQrKLZ0iGa8XnzmSZ7RLPr
+jVp32NRFs6ZVu4KrQ7i9KWx1Qsv6yi6GHYfO7fpqqfqe6rtqvemm+cLm3ye3
+S2sLGl7RcnFkU30z9BvHm21coGXFumzWd2XfJSCJ3K6PbfmYSJcf6QcpU/+D
+lCWzGaTw41iV5WQ5HtsBEBSpGlq1ZtZZXU+bJ/6ddNnT3aMeZdySI8uA2dNm
+53sMQAeuXzf2T7DKBCLQlDaSmQDpfF7NiNgOHCOfvBjLUE6qxkytf7CajVGt
+y1qP41Unkx/Nx6jWnR/dvcl7Yzm+7RjNaW1FliO6UGodkUdNL64JNnTptJbs
+Ptm8felAfjqa01qqxkyt/8s7TmotmH+1nnXarO+Ke259xzG3vux0rHGBDlF0
+2vSZW+cyNThvHvVZWfjx4YQshw0DYFD3t3whCGz2fSPl3ghXD8JeCb8d3dYX
+9LR54t9Jlz3dPWoLpsnk1hdpXwl/TN/Flnf9m/SMILAJ3QIgKoLAZq/TepHf
+fevt0wD3rctOxxoXaAmXW7tCcHWRogoHAG7EKaMAeuD8kRF8Ln0PH6kaE7WW
+rmpdMv9qbTRltC23nuWXWy+yjAmT8d+aBACMHbF/IFWTS269fayetPZgjQsG
+P8vM3D4Ao0WePp16NC16rX1h2M/tSlmGA/WRIlWTi1pXdPdoVetnDq+YcGvz
+B3XHGj22sWl/JTzDU3YygLks3pGxHYiJVI1xNJs6RLNr1lzMonSPZny+UWuz
+aFacdLmFvujR+spaJ7TcFFYxrOqyx7KYRf0VLSv7uhxaLowKZNS7hEMQ2KS7
+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
++/8DluSbGg==
+
+    
+    
+    </embedded_sof_file>
+  </embedded_sof_files>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="frame size" size="2" value="1366,718"/>
+    <multi attribute="jtag widget size" size="2" value="390,133"/>
+  </global_info>
+</session>

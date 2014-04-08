@@ -1,0 +1,16 @@
+module segdriver(
+	IN[3:0],
+	OUT[6:0]
+);
+
+input [3:0] IN;
+output [6:0] OUT;
+
+case(IN)
+	0: assign OUT = 7'b1111110;
+	1: assign OUT = 7'b0110000;
+	2: assign OUT = 7'b1101101;
+	default: assign OUT = 7'b1111111;
+endcase
+	
+endmodule

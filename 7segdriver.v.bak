@@ -1,0 +1,6 @@
+module 7segdriver(
+	IN[3:0],
+	OUT[6:0]
+)
+	
+endmodule

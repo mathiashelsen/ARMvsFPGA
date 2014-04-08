@@ -1,0 +1,8 @@
+module(
+	SW[0],
+	SW[1],
+	LEDG[0]
+);
+
+assign LEDG[0] = SW[0] ^ SW[1];
+endmodule
