@@ -1,18 +1,4 @@
 |ARMvsFPGA
-SW[0] => shiftReg[0].DATAIN
-SW[1] => shiftReg[1].DATAIN
-SW[2] => shiftReg[2].DATAIN
-SW[3] => shiftReg[3].DATAIN
-LEDG[0] <= <GND>
-LEDG[1] <= <GND>
-LEDG[2] <= <GND>
-LEDG[3] <= <GND>
-LEDG[4] <= <GND>
-LEDG[5] <= <GND>
-LEDG[6] <= <GND>
-LEDG[7] <= <GND>
-LEDG[8] <= <GND>
-LEDG[9] <= <GND>
 HEX0_D[0] <= segdriver:ss1.OUT
 HEX0_D[1] <= segdriver:ss1.OUT
 HEX0_D[2] <= segdriver:ss1.OUT
@@ -41,24 +27,100 @@ HEX3_D[3] <= segdriver:ss4.OUT
 HEX3_D[4] <= segdriver:ss4.OUT
 HEX3_D[5] <= segdriver:ss4.OUT
 HEX3_D[6] <= segdriver:ss4.OUT
-BUTTON[0] => shiftReg[0].CLK
-BUTTON[0] => shiftReg[1].CLK
-BUTTON[0] => shiftReg[2].CLK
-BUTTON[0] => shiftReg[3].CLK
-BUTTON[0] => shiftReg[4].CLK
-BUTTON[0] => shiftReg[5].CLK
-BUTTON[0] => shiftReg[6].CLK
-BUTTON[0] => shiftReg[7].CLK
-BUTTON[0] => shiftReg[8].CLK
-BUTTON[0] => shiftReg[9].CLK
-BUTTON[0] => shiftReg[10].CLK
-BUTTON[0] => shiftReg[11].CLK
-BUTTON[0] => shiftReg[12].CLK
-BUTTON[0] => shiftReg[13].CLK
-BUTTON[0] => shiftReg[14].CLK
-BUTTON[0] => shiftReg[15].CLK
-BUTTON[1] => ~NO_FANOUT~
-BUTTON[2] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+GPIO0_D[0] <> GPIO0_D[0]
+GPIO0_D[1] <> GPIO0_D[1]
+GPIO0_D[2] <> GPIO0_D[2]
+GPIO0_D[3] <> GPIO0_D[3]
+GPIO0_D[4] <> GPIO0_D[4]
+GPIO0_D[5] <> GPIO0_D[5]
+GPIO0_D[6] <> GPIO0_D[6]
+GPIO0_D[7] <> GPIO0_D[7]
+GPIO0_D[8] <> GPIO0_D[8]
+GPIO0_D[9] <> GPIO0_D[9]
+GPIO0_D[10] <> GPIO0_D[10]
+GPIO0_D[11] <> GPIO0_D[11]
+GPIO0_D[12] <> GPIO0_D[12]
+GPIO0_D[13] <> GPIO0_D[13]
+GPIO0_D[14] <> GPIO0_D[14]
+GPIO0_D[15] <> GPIO0_D[15]
+
+
+|ARMvsFPGA|MasterPLL:pll1
+inclk0 => sub_wire4[0].IN1
+c0 <= altpll:altpll_component.clk
+locked <= altpll:altpll_component.locked
+
+
+|ARMvsFPGA|MasterPLL:pll1|altpll:altpll_component
+inclk[0] => MasterPLL_altpll:auto_generated.inclk[0]
+inclk[1] => MasterPLL_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= MasterPLL_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|ARMvsFPGA|MasterPLL:pll1|altpll:altpll_component|MasterPLL_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= pll1.LOCKED
 
 
 |ARMvsFPGA|segdriver:ss1
