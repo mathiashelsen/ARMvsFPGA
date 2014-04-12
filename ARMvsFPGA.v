@@ -1,10 +1,17 @@
+/*
+ * GPIO0_D[15:0] -> data
+ * GPIO0_D[16] -> we
+ * GPIO0_D[17] -> oe
+ * GPIO0_D[18] -> ce
+ */
 module ARMvsFPGA(
 	HEX0_D[6:0],
 	HEX1_D[6:0],
 	HEX2_D[6:0],
 	HEX3_D[6:0],
 	CLOCK_50,
-	GPIO0_D[18:0]
+	GPIO0_D[18:0],
+	LEDG[9:0]
 );
 
 input CLOCK_50;
@@ -13,6 +20,7 @@ output [6:0]HEX0_D;
 output [6:0]HEX1_D;
 output [6:0]HEX2_D;
 output [6:0]HEX3_D;
+output [9:0]LEDG;
 
 reg [15:0] shiftReg;
 reg [15:0] dataOut;
@@ -30,6 +38,13 @@ wire CE;
 assign WE = GPIO0_D[16];
 assign OE = GPIO0_D[17];
 assign CE = GPIO0_D[18];
+
+reg CEtoggle;
+
+assign LEDG[0] = WE;
+assign LEDG[1] = OE;
+assign LEDG[2] = CE;
+assign LEDG[3] = CEtoggle;
 
 reg [1:0] WEstate;
 wire WERisingEdge;			
@@ -57,6 +72,7 @@ always @(posedge clock)
 begin
 	if( ~CE )
 	begin
+		CEtoggle <= 1'b0;
 		if(OEFallingEdge)
 		begin
 			dirOut <= 1'b1;
