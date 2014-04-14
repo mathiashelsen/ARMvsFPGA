@@ -68,7 +68,7 @@ assign WERisingEdge = WEstate[0] & ~WEstate[1]; // If the current is High and th
 assign WEFallingEdge = ~WEstate[0] & WEstate[1];
 assign OEFallingEdge = ~OEstate[0] & OEstate[1]; // If the current is Low and the previous is High
 
-always @(posedge clock)
+always @(negedge clock)
 begin
 	if( ~CE )
 	begin
