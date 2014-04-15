@@ -46,10 +46,10 @@ assign LEDG[1] = OE;
 assign LEDG[2] = CE;
 assign LEDG[3] = CEtoggle;
 
-reg [1:0] WEstate;
+reg [3:0] WEstate;
 wire WERisingEdge;			
 wire WEFallingEdge;
-reg [1:0] OEstate;
+reg [3:0] OEstate;
 wire OEFallingEdge;
 
 MasterPLL pll1 (.inclk0(CLOCK_50), .c0(clock), .locked());
@@ -61,15 +61,16 @@ segdriver ss4 (.IN(shiftReg[15:12]), .OUT(HEX3_D));
 // To detect a rising edge on WE and falling on OE
 always @(posedge clock)
 begin
-	WEstate <= {WEstate[0], WE};
-	OEstate <= {OEstate[0], OE};
+	WEstate <= {WEstate[2:0], WE};
+	OEstate <= {OEstate[2:0], OE};
 end
-assign WERisingEdge = WEstate[0] & ~WEstate[1]; // If the current is High and the previous is Low
-assign WEFallingEdge = ~WEstate[0] & WEstate[1];
-assign OEFallingEdge = ~OEstate[0] & OEstate[1]; // If the current is Low and the previous is High
+assign WERisingEdge = WEstate[1:0] & ~WEstate[3:2]; // If the current is High and the previous is Low
+assign WEFallingEdge = ~WEstate[1:0] & WEstate[3:2];
+assign OEFallingEdge = ~OEstate[1:0] & OEstate[3:2]; // If the current is Low and the previous is High
 
 always @(negedge clock)
 begin
+/*
 	if( ~CE )
 	begin
 		CEtoggle <= 1'b0;
@@ -78,11 +79,11 @@ begin
 			dirOut <= 1'b1;
 			dataOut <= shiftReg;
 		end
-		else if(WEFallingEdge)
+		*/
+		if(WEFallingEdge)
 			dirOut <= 1'b0;
 		else if(WERisingEdge)
 			shiftReg <= dataIn;
-	end
 end
 
 endmodule
